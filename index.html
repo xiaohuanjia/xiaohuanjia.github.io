@@ -3,57 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>xiaohuanjia 的个人主页</title>
+  <title>xiaohuanjia</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.6;
     }
     .container {
-      text-align: center;
-      padding: 2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
     }
     h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      background: linear-gradient(90deg, #ff6ec4, #7873f5);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
     }
-    p {
-      font-size: 1.2rem;
-      color: #aaa;
+    .subtitle {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .about {
       margin-bottom: 2rem;
     }
+    .about p {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    .links {
+      margin-top: 1.5rem;
+    }
     .links a {
-      display: inline-block;
-      margin: 0.5rem 1rem;
-      padding: 0.7rem 1.5rem;
-      border: 1px solid #7873f5;
-      border-radius: 2rem;
-      color: #7873f5;
+      color: #222;
       text-decoration: none;
-      transition: all 0.3s;
+      margin-right: 1rem;
     }
     .links a:hover {
-      background: #7873f5;
-      color: #fff;
+      text-decoration: underline;
+    }
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.3rem;
+    }
+    .nav {
+      margin-bottom: 2rem;
+    }
+    .nav a {
+      color: #555;
+      text-decoration: none;
+      margin-right: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .nav a:hover {
+      color: #000;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <nav class="nav">
+      <a href="#">Home</a>
+    </nav>
+
     <h1>xiaohuanjia</h1>
-    <p>Welcome to my personal page</p>
-    <div class="links">
+    <p class="subtitle">Developer</p>
+
+    <section class="about">
+      <p>Hello! Welcome to my personal page.</p>
+    </section>
+
+    <section class="links">
+      <div class="section-title">Links</div>
       <a href="https://github.com/xiaohuanjia" target="_blank">GitHub</a>
-    </div>
+    </section>
   </div>
 </body>
 </html>

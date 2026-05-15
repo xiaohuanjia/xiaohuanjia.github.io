@@ -13,36 +13,49 @@
       line-height: 1.6;
     }
     .container {
-      max-width: 700px;
+      max-width: 750px;
       margin: 0 auto;
       padding: 3rem 2rem;
     }
-    h1 {
+    nav {
+      margin-bottom: 2rem;
+    }
+    nav a {
+      color: #555;
+      text-decoration: none;
+      margin-right: 1.5rem;
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: #000; }
+    .profile {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .profile-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .profile-info h1 {
       font-size: 1.8rem;
       font-weight: 600;
       margin-bottom: 0.3rem;
     }
-    .subtitle {
+    .profile-info .title {
       color: #666;
       font-size: 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.8rem;
     }
-    .about {
-      margin-bottom: 2rem;
-    }
-    .about p {
-      margin-bottom: 1rem;
-      color: #444;
-    }
-    .links {
-      margin-top: 1.5rem;
-    }
-    .links a {
-      color: #222;
+    .profile-info .links a {
+      color: #333;
       text-decoration: none;
       margin-right: 1rem;
     }
-    .links a:hover {
+    .profile-info .links a:hover {
       text-decoration: underline;
     }
     .section-title {
@@ -53,36 +66,42 @@
       border-bottom: 1px solid #eee;
       padding-bottom: 0.3rem;
     }
-    .nav {
-      margin-bottom: 2rem;
+    .about p {
+      margin-bottom: 1rem;
+      color: #444;
     }
-    .nav a {
-      color: #555;
-      text-decoration: none;
-      margin-right: 1.5rem;
-      font-size: 0.95rem;
-    }
-    .nav a:hover {
-      color: #000;
+    @media (max-width: 600px) {
+      .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .profile-info .links {
+        margin-top: 0.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <nav class="nav">
+    <nav>
       <a href="#">Home</a>
     </nav>
 
-    <h1>xiaohuanjia</h1>
-    <p class="subtitle">Developer</p>
-
-    <section class="about">
-      <p>Hello! Welcome to my personal page.</p>
+    <section class="profile">
+      <img src="200a49fd0c3483b690c6ed28978b0cb1.png" alt="avatar" class="profile-photo">
+      <div class="profile-info">
+        <h1>xiaohuanjia</h1>
+        <p class="title">Developer</p>
+        <div class="links">
+          <a href="https://github.com/xiaohuanjia" target="_blank">GitHub</a>
+        </div>
+      </div>
     </section>
 
-    <section class="links">
-      <div class="section-title">Links</div>
-      <a href="https://github.com/xiaohuanjia" target="_blank">GitHub</a>
+    <section class="about">
+      <div class="section-title">About Me</div>
+      <p>Hello! Welcome to my personal page.</p>
     </section>
   </div>
 </body>
